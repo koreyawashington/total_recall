@@ -100,15 +100,15 @@ I should only spend about 15 minutes trying to break a code before asking for he
 
 
 
-// let firstVariable ="Hello World";
-// firstVariable = 12;
-// let secondVariable= firstVariable;
-// secondVariable = "Goodbye World";
-// console.log(firstVariable)
-// console.log(secondVariable);
+let firstVariable ="Hello World";
+firstVariable = 12;
+let secondVariable= firstVariable;
+secondVariable = "Goodbye World";
+console.log(firstVariable)
+console.log(secondVariable);
 
-// const yourName = "Koreya Washington"
-// console.log(`Hello my name is ${yourName}`)
+const yourName = "Koreya Washington"
+console.log(`Hello my name is ${yourName}`)
 
 
 
@@ -143,11 +143,7 @@ I should only spend about 15 minutes trying to break a code before asking for he
 
 
 // D. The Farm
-/* Declare a variable animal. Set it to be either "cow" or something else
-Write code that will print out "mooooo" if the it is equal to cow
-Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
-Commit
-*/
+
 
 
 
@@ -163,10 +159,7 @@ Commit
 
 
 // E. Driver's Ed
-/* Make a variable that holds a person's age; be semantic
-Write code that will print out "Here are the keys!", if the age is 16 years or older,
- or, if the age is younger than 16, a message should print "Sorry, you're too young."
-*/
+
 
 
 
