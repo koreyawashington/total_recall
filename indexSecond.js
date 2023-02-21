@@ -122,7 +122,7 @@
 // console.log(favMovies.indexOf('Fast and Furious'));//if i try to console.log()something that is not in the array I got the retuen output of -1
 
 // ////////////////////////////////
-// // Where is Waldo
+// // Where is Waldo answered 
 // ////////////////////////////////
 
 // const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
