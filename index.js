@@ -451,6 +451,10 @@ console.log(isVowel("a"));
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 => [4, 13]*/
 
+// function getTwoLengths(a,b){
+// return [a.length, b.length]
+// }
+// console.log(getTwoLengths("Koreya", "Washington"))
 
 // F.getMultipleLengths
 /*Write a function getMultipleLengthsthat accepts a single parameter as an argument: an array of strings. 
@@ -458,15 +462,37 @@ The function should return an array of numbers where each number is the length o
 
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 => [5, 4, 2, 2, 4]*/
-
+// function getMultipleLengths(arrayOfStrings){
+// 	    let newArray= []
+// 	    for(let i =0; i<arrayOfStrings.length; i++){
+// 	       newArray.push(arrayOfStrings[i].length); 
+// 	    }
+	
+// 	    return newArray
+// 	}
+	
+	
+// 	console.log(getMultipleLengths(["apple", "bottom", "jeans","boots","fur"]))
+// 	getMultipleLengths(["apple", "bottom", "jeans","boots","fur"])
 
 // G. maxOfThree
 /*Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
 
 console.log(maxOfThree(6, 9, 1));
-=> 9
+=> 9*/
+// function maxOfThree(num1, num2, num3) {
+// if (num1 > num2 && num1 > num3){
+// return num1
+//     }else if (num2 >num3 && num2> num1){
+//         return num2
+//     }
+//     else{
+//         return num3
+//     }
+// }
+//     console.log(maxOfThree(5, 12, 56))
 
-Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max().
+/*Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max().
 
 
 * */
@@ -476,6 +502,19 @@ Did you use Google and find Math.max()? If so, great job! Very resourceful—kee
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 => "Peanutbutter"* */
+
+// function printLongestWord(arrayOfStrings) {
+// 	  let longestWordInArray = '';
+// 	  for (let i = 0; i < arrayOfStrings.length; i++)
+// 	    if (longestWordInArray.length < arrayOfStrings[i].length) {
+// 	      longestWordInArray = arrayOfStrings[i];
+// 	    }
+// 	  console.log(longestWordInArray);
+// 	  return longestWordInArray;
+// 	}
+	
+// 	printLongestWord(["David","Lion","Pencil","Brainstorm","Supercalifragilisticexpialidocious"]);
+	
 //_____________________________________________________________
 
 
@@ -494,31 +533,38 @@ Create an object called user.
 Write in to the object the key-value pairs for name, email, age, and purchased. Set the 
 value of purchasedto an empty array []. Set the other values to whatever you would like.
  */
-let user = {
-	name:"korea",
-	email:"korea@yahoo.com",
-	age:"21 years",
-	purchased:["eyeliner","hoodie","necklace","sneakers","bracelet"]
-}
+// const user = {
+// 	name: 'Peter',
+// 	email: 'peterwho@gmail.com',
+// 	age: 33,
+// 	purchased: [],
+// };
 
-console.log(user);
 // B.
 /**Update the user
 Our user has changed his or her email address. Without changing the original userobject, update the emailvalue to a new email address.
 Our user has had a birthday! Without changing the original userobject, increment the agevalue using the postfix operator. Hint: age++
  */
-
+// user.email = 'peterjesusfriend@gmail.com';
+// user.age++;
+// console.log(user.age);
+// console.log(user.email);
 // C.
 /**You have decided to add your user's location to the data that you want to collect.
 
 Without changing the original userobject, add a new key locationto the object, and give it a value or some-or-other location (a string). */
-
+// user.location = 'United States of America'
+// console.log(user);
 // D.
 /** Our user has purchased an item! They have purchased some "carbohydrates". Using .push(), add the string "carbohydrates" to the purchasedarray.
 Our user has purchased an item! They have purchased some "peace of mind". Using .push(), add the string "peace of mind" to the purchasedarray.
 Our user has purchased an item! They have purchased some "Merino jodhpurs". Using .push(), add the string "Merino jodhpurs" to the purchasedarray.
 Console.log just the "Merino jodhpurs" from the purchasedarray.*/
+// user.purchased.push('carbohydrates');
+// user.purchased.push('peace of mind');
+// user.purchased.push('Merino jodhpurs');
 
+// console.log(user.purchased[2])
 // E.
 /** Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
 
@@ -537,11 +583,28 @@ CHANGE the friend's age to 55
 The friendhas purchased "The One Ring". Use .push()to add "The One Ring" to the friend's purchasedarray.
 The friendhas purchased "A latte". Use .push()to add "A latte" to the friend's purchasedarray.
 Console.log just "A latte" from the friend's purchasedarray.*/
-
+// user.friend = {
+// 	name: 'Grace Hopper',
+// 	age: 85,
+// 	location: 'New York City',
+// 	purchased: [],
+//   };
+//   console.log(user.friend.name);
+//   console.log(user.friend.location);
+//   user.friend.age = 55;
+//   user.friend.purchased.push('The One Ring');
+//   user.friend.purchased.push('A latte');
+//   console.log(user.friend);
 // F.
 /** Write a for loop that iterates over the User's purchasedarray (NOT the friend's purchased array), and prints each element to the console.
 Write a for loop that iterates over the Friend's purchasedarray, and prints each element to the console.*/
 
+// for (let i = 0; i < user.purchased.length; i++) {
+// 	console.log(user.purchased[i]);
+//   }
+//   for (let i = 0; i < user.friend.purchased.length; i++) {
+// 	console.log(user.friend.purchased[i]);
+//   }
 // G.
 /** Write a single function updateUserthat takes no parameters. When the function is run, it should:
 it should increment the user's age by 1
@@ -550,6 +613,20 @@ The function does not need a returnstatement, it will merely modify the user obj
 
 Write a function oldAndLoudthat performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our userobject, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoudfunction with useras the argument.
 */
+// G.
+// function updateUser() {
+// 	user.age++;
+// 	user.name = user.name.toUpperCase();
+//   }
+//   updateUser();
+//   console.log(user);
+//   function oldAndLoud(person) {
+// 	person.age++;
+// 	person.name = person.name.toUpperCase();
+//   }
+//   oldAndLoud(user);
+//   console.log(user);
+  
 //_____________________________________________________________
 
 
