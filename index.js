@@ -100,15 +100,15 @@ I should only spend about 15 minutes trying to break a code before asking for he
 
 
 
-let firstVariable ="Hello World";
-firstVariable = 12;
-let secondVariable= firstVariable;
-secondVariable = "Goodbye World";
-console.log(firstVariable)
-console.log(secondVariable);
+// let firstVariable ="Hello World";
+// firstVariable = 12;
+// let secondVariable= firstVariable;
+// secondVariable = "Goodbye World";
+// console.log(firstVariable)
+// console.log(secondVariable);
 
-const yourName = "Koreya Washington"
-console.log(`Hello my name is ${yourName}`)
+// const yourName = "Koreya Washington"
+// console.log(`Hello my name is ${yourName}`)
 
 
 
