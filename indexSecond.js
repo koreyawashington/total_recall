@@ -1,11 +1,5 @@
 // Arrays, Loops, and Conditional Reps
-// Learning Objectives
-// Practice with Arrays
-// Practice with Loops
-// Practice with Conditionals
-// Prerequisites
-// An introduction to JavaScript
-
+// 
 
 
 
