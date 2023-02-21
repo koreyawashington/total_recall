@@ -18,51 +18,171 @@
 // Help someone who is stuck, teaching is a great way to learn something more in depth
 // Reach out to the instructional team for more challenges/ways to keep growing with your abilities
 // Getting Started
+
+
 // Create a javascript file inside your homeworkfolder that you will make for today to record your answers (maybe name it answers.js)
 // Keep your answers organized! Included a commented header for each section in your answers file. Something like the following:
 // ////////////////////////////////
-// // Easy Going
+// // Easy Going answered
 // ////////////////////////////////
-
-
-// ////////////////////////////////
-// // Get Even
-// ////////////////////////////////
-
-
-// ////////////////////////////////
-// // Fizz Buzz
-// ////////////////////////////////
-
+// 
+// for(let x = 1; x <= 20; x++){
+//     if(x <= 20){
+//         console.log(x )
+//     }
+// }
 
 // ////////////////////////////////
-// // Wild Wild Life
+// // Get Even answered
+// ////////////////////////////////
+//  for(let y = 0;y <= 200; y++){
+//      if(y % 2 ===0){
+// console.log(y + " is an even number");
+//  }
+// }
+
+// ////////////////////////////////
+// // Fizz Buzz answered
+// ////////////////////////////////
+// for(let i = 0; i <= 100; i++){
+//     	if(i%5 === 0){
+//     		console.log(i + " Buzz");
+//     	}else if(i%3 === 0){
+//     		console.log(i + " Fizz");
+//     	}else if(i%3 === 0 && i%5 === 0){
+//     		console.log(" FizzBizz");
+//     	}else{
+//     		console.log(i);
+//     	}
+//     }
+
+// ////////////////////////////////
+// // Wild Wild Life answered
+// ////////////////////////////////
+// const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+// const sharky = ["Sharky", "shark", 20, "Left Coast"]
+// const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+// const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+// const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+
+// let updateAge = plantee.splice(2,1,"5001");
+// console.log(plantee);
+// let updateHometown = wolfy.splice(3,1,"Gotham City");
+// console.log(wolfy);
+// let addedHometown = dart.splice(3,0,"Hawkins");
+// console.log(dart);
+// let wolfyNewName =wolfy.splice(0,1,"Gameboy");
+// console.log(wolfy);
+
+// ////////////////////////////////
+// // Yell at the Ninja Turtles answered
+// ////////////////////////////////
+// const ninjaTurles = ["donatello","leonardo","raphael","michaelangelo"];
+// const newArr = []
+// for(let item of ninjaTurles){
+//     newArr.push(item.toUpperCase())
+// }
+// console.log(newArr);
+// ////////////////////////////////
+// // Methods, Revisited answered
 // ////////////////////////////////
 
-
-// ////////////////////////////////
-// // Yell at the Ninja Turtles
-// ////////////////////////////////
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
 
-// ////////////////////////////////
-// // Methods, Revisited
-// ////////////////////////////////
+// console.log(favMovies[8]);
+// favMovies.sort();// array.prototype.sort() arranges the objects in an array in alphabetical order
+// console.log(favMovies.pop());//array.prototype.pop removes that last element from an array and returns that element and changes the length of the array
 
+
+// const pushMovie = favMovies.push('Guardians of the Galaxy')
+
+// console.log(favMovies);
+
+// let reverseMovies = favMovies.reverse();
+// console.log(reverseMovies);
+
+// const firstElement = favMovies.shift();
+// console.log(favMovies);
+// console.log(firstElement);
+
+// console.log(favMovies.unshift("The Help"));//array.prototype.unshift adds one or more elements to the beginning of an array and returns the new length of the array
+// console.log(favMovies);
+
+// console.log(favMovies.indexOf('Django Unchained'));
+// favMovies.splice(14,1,"Avatar");
+// console.log(favMovies);
+
+// let slice = favMovies.slice(9)
+// console.log(slice);//array.prototype.slice() returns a shallow copy of a portion of an array into a new array object with a select taring point to the end.This did not change my origanal array!This is just showing me half of my array starting at the 9th movie, there are 18 total movies
+
+// console.log(favMovies); //final results
+
+
+// console.log(favMovies.indexOf('Fast and Furious'));//if i try to console.log()something that is not in the array I got the retuen output of -1
 
 // ////////////////////////////////
 // // Where is Waldo
 // ////////////////////////////////
 
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                     ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                     ["Petunia", ["Baked Goods", "Waldo"]]];
+
+// console.log (whereIsWaldo[0]);//[ 'Timmy', 'Frank' ]
+// console.log (whereIsWaldo[1]);//Eggbert
+// console.log (whereIsWaldo[2]);//[ 'Lucinda', 'Jacc', 'Neff', 'Snoop' ]
+// console.log (whereIsWaldo[3]);//[ 'Petunia', [ 'Baked Goods', 'Waldo' ] ]
+
+// //Remove Eggbert (hint look at the slice/splice method(s))
+// whereIsWaldo.splice(whereIsWaldo.indexOf("Eggbert"),1);
+
+// // Change "Neff" to "No One"
+// whereIsWaldo[1][2] = "No One";
+
+// //Access and console.log "Waldo"
+// console.log (whereIsWaldo[2][1][1]);
+
 
 // ////////////////////////////////
-// //  Excited Kitten
+// //  Excited Kitten answered
+// ////////////////////////////////
+
+// const  kittyTalk = ["...human...why you taking pictures of me?...","...the catnip made me do it...","...why does the red dot always get away..." ];
+// let meow = 0 ;
+// for (let i =0 ; i <= 20 ; i++)
+// {
+//   if (i % 2 == 0){
+//     meow =  Math.floor(Math.random() * 3) ;
+//     console.log (kittyTalk[meow]);
+//     }
+//     else 
+//         console.log ( "Love me, pet me! HSSSSSS!");
+
+// }
+// ////////////////////////////////
+// //  Find the Median ansered
 // ////////////////////////////////
 
 
-// ////////////////////////////////
-// //  Find the Median
-// ////////////////////////////////
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+// //The median is the middle number in a sorted, ascending or descending, list of numbers and can be more descriptive of that data set than the average.
+
+// let calculateMedian = function (arr){
+//         arr.sort();
+//         let median = 0;
+//         let length = arr.length;
+//         if (length % 2 != 0 )
+//         median = arr[Math.floor(length / 2)]
+//         else 
+//         median = (arr[length/2]+arr[(length/2)-1]) / 2
+//       return median;  
+//       }
+
+// console.log (calculateMedian(nums))
+
+
 // TEST YOUR WORK! Make sure that your code works node name_of_your_file.js.
 // If you're stuck on something for "too long" or get overly frustrated, make a comment and move on. Return to it later. You may find some later problems easier or need a break from what you're working on and set some fresh eyes on something you've been stuck on.
 // After each section (even if you're not fully done with it), add and commit your work.
@@ -100,103 +220,25 @@
 
 // CSS Basics (colors, background, font properties)
 
-// Part II: JavaScript Reps
-// Easy Going
-// Write a for loop that will log the numbers 1 through 20.
-// 🔴 The commit message should read:
-// "Easy Going answered"
-// Get Even
-// Write a for loop that will log only the even numbers in 0 through 200.
+// 
 
-// Hint: Think about the increment expression.
+// // arr is a keyword recognized by JS
+// console.log(nums);
 
-// 🔴 The commit message should read:
-// "Get Even answered"
-// Fizz Buzz
-// This is a classic problem that you should get really comfortable solving. If you've solved it before, try to make it more elegant and short.
+// function median(arr) {
+//     // step 1: sort our array
+//     arr.sort();
 
-// Write a javascript application that logs all numbers from 1 - 100.
-// If a number is divisible by 3 log "Fizz" instead of the number.
-// If a number is divisible by 5 log "Buzz" instead of the number.
-// If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
-// 🔴 The commit message should read:
-// "Fizz Buzz answered"
-// Wild Wild Life
-// Use the following arrays to answer the questions below (name,species ,age, hometown): You should be modifying the elements by accessing them. It is up to you which methods to use.
+//     const middleIndex = arr.length / 2;
+//     //if ood, return middle element
+//     if(arr.length % 2 !== 0){
+//         return arr[Math.floor(middleIndex)]
+//     }
+    
+//     return(arr[middleIndex - 1] + arr[middleIndex] / 2)
+// }
 
-// const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
-// const sharky = ["Sharky", "shark", 20, "Left Coast"]
-// const plantee = ["Plantee", "plant",  5000 , "Mordor"]
-// const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
-// const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
-// Plantee just had her birthday; change Plantee's array to reflect her being a year older.
-// Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
-// Give D'Art a second hometown by adding "Hawkins"
-// Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfyarray and replace it with "Gameboy".
-// 🔴 The commit message should read:
-// "Wild Wild Life answered"
-// Yell at the Ninja Turtles
-// Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
-// Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase()on each of them and print out the result.
-// As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own. You've got this!
-
-// 🔴 The commit message should read:
-// "Yell at the Ninja Turtles answered"
-// Methods, Revisited
-// Here is a list of favMovies:
-
-// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
-// Console log: the index of Titanic
-// Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
-// Note: if you have to add to the array, feel free to add any movie you'd like
-
-// use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
-// Use the method pop
-// push"Guardians of the Galaxy"
-// Reverse the array
-// Use the shiftmethod
-// unshift- what does it return?
-// splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
-// slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
-// store the value of your slicein a variable, console.log it - Thought question: what is going on here?
-// console.log your final results
-// After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
-// Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
-
-// 🔴 The commit message should read:
-// "Methods Revisited answered"
-// Where is Waldo
-// With the following multi-dimensional array
-// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-//                     ["Lucinda", "Jacc", "Neff", "Snoop"],
-//                     ["Petunia", ["Baked Goods", "Waldo"]]];
-// Remove Eggbert (hint look at the slice/splice method(s))
-// Change "Neff" to "No One"
-// Access and console.log "Waldo"
-// 🔴 The commit message should read:
-// "Where is Waldo answered"
-// Excited Kitten
-// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
-// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
-// Hint 1
-// Hint 2
-// Hint 3
-// Hint 4
-// Hint 5
-// Hint 6
-// Image of cat with funny quote about dot
-
-// 🔴 The commit message should read:
-// "Excited Kittens answered"
-// Find the Median
-// Find the median number in the following numsarray, then console.log that number.
-// hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
-// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
-
-// Expected output:
-// => 15
-// 🔴 The commit message should read:
-// "Find the Median answered"
+// console.log(median(nums));
 // Hungry for More?
 // Choose one that you didn't get to solve in lab
 

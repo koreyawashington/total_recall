@@ -1,35 +1,31 @@
-// Example of What your JS File in VS Code should look like
+
+// 	Remember!!! Once you’ve completed a problem,
+// 	COMMENT OUT YOUR WORK before moving on to the next one.
+// 	This makes it easier to read and debug the current 
+// 	Solution you are working on.
+
+//     GitHub Help
+
+// As a refresher to what we are doing:
+
+// git init <- initiates a hidden folder in your files to use as a staging area that will be pushed to the cloud
+
+// The three lines of code copied connect that folder created to the cloud. 
+
+// Afterwards, the only lines of code you SHOULD need are:
+// git add . <-- the period adds all files in the folder to the staging area.
+// git commit -m "message" <-- This is 'm' is for message that you type in quotations showing what work was done,. 
+
+// git push <--- finalizes and 'pushes' the code to github
 
 
-/*
-	Remember!!! Once you’ve completed a problem,
-	COMMENT OUT YOUR WORK before moving on to the next one.
-	This makes it easier to read and debug the current 
-	Solution you are working on.
+// Once you finish your lab/HW remember to push to github:
 
-    GitHub Help
-
-As a refresher to what we are doing:
-
-git init <- initiates a hidden folder in your files to use as a staging area that will be pushed to the cloud
-
-The three lines of code copied connect that folder created to the cloud. 
-
-Afterwards, the only lines of code you SHOULD need are:
-git add . <-- the period adds all files in the folder to the staging area.
-git commit -m "message" <-- This is 'm' is for message that you type in quotations showing what work was done,. 
-
-git push <--- finalizes and 'pushes' the code to github
+// Git add . 
+// Git commit -m”final commit”
+// Git push
 
 
-
-Once you finish your lab/HW remember to push to github:
-
-Git add . 
-Git commit -m”final commit”
-Git push
-
-*/
 
 
 // I. Variables & Data Types
@@ -250,6 +246,14 @@ How do you access the 1st element in the array?
 Change the value of "Hello"to "World"
 Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
  */
+// const randomThings = [1, 10, "Hello", true]
+
+// randomThings.splice(2,1,"World");//Change the value of "hello" to "world"
+// console.log(randomThings[0]);//access the element in the first index of array
+// console.log(randomThings);
+
+
+
 
 // D. Change values
 /* Given the following array const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
@@ -258,9 +262,16 @@ What would you write to access the 3rd element of the array?
 Change the value of "Github" to "Octocat"
 Add a new element, "Cloud City" to the array
 */
+// const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+// const length = ourClass.push("Cloud City");//add a new element
+// ourClass.splice(4,1,"Octocat");//change the value from github to octocat
+// console.log(ourClass[2]);//acces the 3 element of array in the 2nd index
+
+// console.log(ourClass)
 
 // E. Mix It Up
-/* Note: You don't really need .splice()for these. You could use it, but there are simpler array methods that are more appropriate.
+/* Note: You don't really need .splice()for these. You could use it, but there are 
+simpler array methods that are more appropriate.
 
 Given the following array: const myArray = [5, 10, 500, 20]
 
@@ -268,8 +279,16 @@ Add the string "Aegon"to the end of the array. Add another string of your choice
 Remove the 5from the beginning of the array.
 Add the string "Bob Marley"to the beginning of the array.
 Remove the string of your choice from the end of the array.
-Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
+Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean?
+ Did the .reverse()method return anything?
 */
+// const myArray = [5, 10, 500, 20];
+ 
+// const length = myArray.push("Aegon","Pineapples");
+// myArray.splice(0,1,"Bob Marley");
+// myArray.reverse();
+// //The ,reverse method mutatates the array and returns a reference to the array
+//  console.log(myArray)
 
 // F. Biggie Smalls
 /* Create a variable that contains an integer.
@@ -277,11 +296,14 @@ Reverse this array using Array.prototype.reverse(). Did you mutate the array? Wh
 Write an if ... elsestatement that:
 
 console.log()s "little number" if the number is entered is less than 100
-console.log()s big numberif the number is greater than or equal to 100.
-
-
-*/
-
+console.log()s big numberif the number is greater than or equal to 100.*/
+// let num = Math.floor(Math.random()*150)
+// if (num >= 100) {
+// 	console.log("big number");
+// }else{
+// 	console.log("little number");
+// }
+//  console.log(num)
 // G. Monkey in the Middle
 /*Write an if ... else if ... elsestatement:
 
@@ -289,10 +311,18 @@ console.log()little numberif the number entered is less than 5.
 If the number entered is more than 10, log big number.
 Otherwise, log "monkey".
 
-*/
+// */
+// let num = Math.floor(Math.random() *20 )
+// if (num < 5) {
+// 	console.log("little number");
+// }else{
+// 	console.log("monkey")
+// }
+// console.log(num);
 
 // H. What's in Your Closet?
-/*What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
+/*What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence 
+"Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
 Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
 Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
 Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
@@ -309,7 +339,13 @@ Get more specific about what kind of PJs Thom's wearing this winter. Modify the 
 // 	"yellow knit hat",
 // 	"marshmallow peeps"
 //   ];
-  
+
+//   let ourVariable = kristynsCloset[2];// ourVariable equals "right sock"
+//   console.log(`Kristen is rocking that ${ourVariable} today!`);
+
+//   kristynsCloset.splice(6,0,"raybans");
+
+//   console.log(kristynsCloset);
 //   // Thom's closet is more complicated. Check out this nested data structure!!
 //   const thomsCloset = [
 // 	[
@@ -330,6 +366,16 @@ Get more specific about what kind of PJs Thom's wearing this winter. Modify the 
 // 	  "raybans"
 // 	]
 //   ];
+//   const top = thomsCloset[0][0];
+//   const bottom = thomsCloset[1][0];
+//   const accessory = thomsCloset[2][2];
+// thomsCloset[1].splice(2,1,"Footie Pajamas");
+// console.log(thomsCloset[1][2]);//chang pj to footie pajamas
+//   console.log(`Thom is wearing a fancy ${top}, a fresh pair of ${bottom}, and a rare set of ${accessory}.`);
+//   console.log(thomsCloset[0][0]);//access shirt
+//   console.log(thomsCloset[1][0]);//access pants
+//   console.log(thomsCloset[2][2]);//access accessory
+
 //_____________________________________________________________
 
 
@@ -341,54 +387,78 @@ Get more specific about what kind of PJs Thom's wearing this winter. Modify the 
 
 // IV. Functions
 // A. printGreeting
-/*Do you think you could write a function called printGreetingwith a parameter namethat returns a greeting with the argument interpolated into the greeting?
+/*Do you think you could write a function called printGreetingwith a parameter namethat returns a
+ greeting with the argument interpolated into the greeting?
 
 Like so?
 
 console.log(printGreeting("Slimer"));
 => Hello there, Slimer!
 
-You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
+You think you could? I think so too. Feel free to skip this problem, because you've already done it. 
+If you've done the problem twice, read entire problems carefully before doing them from now on.
 */
 
 // B.printCool
-/*Write a function printCoolthat accepts one parameter, nameas an argument. The function should print the name and a message saying that that person is cool.
+/*Write a function printCoolthat accepts one parameter, nameas an argument. The function should print 
+the name and a message saying that that person is cool.
 
 console.log(printCool("Captain Reynolds"));
 => "Captain Reynolds is cool";
  */
-
+// function printCool(name) {
+// 	console.log(`${name} is cool`);
+// }
+// let firstName = printCool("Captain Reynolds")
 // C. calculateCube
 /*Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
 
 console.log(calculateCube(5));
-=> 125
+=> 125*/
 
-* */
+
+// function calculateCube(number) {
+	
+// 	let volume = number ** number
+// 	console.log(`The volume of the cube is ${volume}`);
+// }
+// const calculation = calculateCube(3);
 
 // D. isVowel
-/*Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
+/*Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. 
+The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. 
+In general, when you write functions, take a minute to test them with different values to make sure they behave
+ the way you want.
 
 console.log(isVowel("a"));
-=> true
+=> true*/
 
-* */
+// function isVowel(letters) {
+// 	letters = letters.toLowerCase()
+// 	if(letters === "a"||letters ==="e"||letters==="i"|| letters === "o"|| letters ==="u"){
+// 		return true;
+// 	}else{
+// 		return false;
+// 	}
+// }
+// console.log(isVowel("e"));
+
 
 // E.getTwoLengths
-/*Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+/*Write a function getTwoLengthsthat accepts two parameters (strings). The function should return
+ an array of numbers where each number is the length of the corresponding string.
 
 console.log(getTwoLengths("Hank", "Hippopopalous"));
-=> [4, 13]
-* */
+=> [4, 13]*/
+
 
 // F.getMultipleLengths
-/*Write a function getMultipleLengthsthat accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+/*Write a function getMultipleLengthsthat accepts a single parameter as an argument: an array of strings. 
+The function should return an array of numbers where each number is the length of the corresponding string.
 
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
-=> [5, 4, 2, 2, 4]
+=> [5, 4, 2, 2, 4]*/
 
-
-* */
 
 // G. maxOfThree
 /*Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
@@ -414,15 +484,24 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 
 
 // V. Objects
-/*Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
+/*Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website,
+ and we want to store that user's data. The object data structure is a good way to organize the data from our user.
 
 
 // A.
 /**Make a user object
 Create an object called user.
-Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchasedto an empty array []. Set the other values to whatever you would like.
+Write in to the object the key-value pairs for name, email, age, and purchased. Set the 
+value of purchasedto an empty array []. Set the other values to whatever you would like.
  */
+let user = {
+	name:"korea",
+	email:"korea@yahoo.com",
+	age:"21 years",
+	purchased:["eyeliner","hoodie","necklace","sneakers","bracelet"]
+}
 
+console.log(user);
 // B.
 /**Update the user
 Our user has changed his or her email address. Without changing the original userobject, update the emailvalue to a new email address.
